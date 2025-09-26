@@ -1,0 +1,37 @@
+{
+  "name": "smart-guide-app",
+  "version": "1.0.0",
+  "description": "An intelligent personal assistant app that helps users manage their schedules, reminders, notes, and provides voice assistance and recommendations.",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^4.5.4",
+    "ts-node": "^10.4.0",
+    "jest": "^27.0.6",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/smart-guide-app.git"
+  },
+  "keywords": [
+    "personal-assistant",
+    "voice-assistant",
+    "reminders",
+    "scheduling",
+    "notes",
+    "recommendations"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
