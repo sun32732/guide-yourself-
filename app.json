@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "expo-secure-store"
+  ],
+  "extra": {
+    "eas": {
+      "projectId": "a14cfef2-d6e3-4224-a81c-f3bbc70a788d"
+    }
+  },
+  "expo": {
+    "android": {
+      "package": "com.sun32732.guideyourself"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a14cfef2-d6e3-4224-a81c-f3bbc70a788d"
+      }
+    },
+    "plugins": [
+      "expo-web-browser"
+    ]
+  }
+}

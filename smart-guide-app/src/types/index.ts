@@ -1,35 +1,55 @@
+// Navigation types
+export type RootStackParamList = {
+  Splash: undefined;
+  Home: undefined;
+  Goals: undefined;
+  Scheduling: undefined;
+  Notifications: undefined;
+};
+
+// Goal types
+export interface Goal {
+  id: number;
+  title: string;
+  description: string;
+  progress: number;
+  deadline: string;
+  category?: string;
+  priority?: 'low' | 'medium' | 'high';
+}
+
+// Task types
+export interface Task {
+  id: number;
+  title: string;
+  time: string;
+  duration: string;
+  completed?: boolean;
+  category?: string;
+}
+
+// Notification types
+export interface Notification {
+  id: number;
+  title: string;
+  message: string;
+  time: string;
+  icon: string;
+  isRead: boolean;
+  type?: 'reminder' | 'achievement' | 'suggestion' | 'alert';
+}
+
+// User types
 export interface User {
-    id: string;
-    username: string;
-    password: string;
-    email: string;
+  id: string;
+  name: string;
+  email: string;
+  avatar?: string;
+  preferences?: UserPreferences;
 }
 
-export interface Schedule {
-    id: string;
-    userId: string;
-    title: string;
-    startTime: Date;
-    endTime: Date;
-}
-
-export interface Reminder {
-    id: string;
-    userId: string;
-    message: string;
-    remindAt: Date;
-}
-
-export interface Note {
-    id: string;
-    userId: string;
-    title: string;
-    content: string;
-}
-
-export interface Recommendation {
-    id: string;
-    userId: string;
-    content: string;
-    createdAt: Date;
+export interface UserPreferences {
+  language: 'ar' | 'en';
+  theme: 'dark' | 'light';
+  notifications: boolean;
 }

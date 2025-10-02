@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "سمارت جايد",
+    "slug": "guide-yourself",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0b1020",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartguide.app"
+    },
+    "android": {
+      "package": "com.smartguide.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0b1020"
+      },
+      "permissions": []
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a14cfef2-d6e3-4224-a81c-f3bbc70a788d"
+      }
+    }
+  }
+}

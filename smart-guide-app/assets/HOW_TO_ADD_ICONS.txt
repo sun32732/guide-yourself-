@@ -1,0 +1,30 @@
+كيفية إضافة الأيقونات لاحقاً
+================================
+
+الخطوات البسيطة:
+
+1. احفظ الصور من المحادثة:
+   - انقر بزر الماوس الأيمن على كل صورة
+   - اختر "Save image as..."
+   - احفظها في هذا المجلد (assets/)
+
+2. أسماء الملفات المطلوبة:
+   ✓ icon.png - الأيقونة الرئيسية (استخدم الصورة 5 الزجاجية)
+   ✓ adaptive-icon.png - للأندرويد (استخدم الصورة 4)
+   ✓ splash.png - شاشة البداية (استخدم الصورة 3 أو 5)
+   ✓ notification-icon.png - للإشعارات (استخدم الصورة 2)
+
+3. بعد حفظ الصور، عدّل ملف app.json:
+   - أضف: "icon": "./assets/icon.png"
+   - أضف في splash: "image": "./assets/splash.png"
+   - أضف في adaptiveIcon: "foregroundImage": "./assets/adaptive-icon.png"
+   - أضف في plugins/expo-notifications: "icon": "./assets/notification-icon.png"
+
+4. أعد تشغيل التطبيق:
+   npm start
+
+ملاحظة: التطبيق يعمل الآن بدون الأيقونات!
+Expo سيستخدم أيقونات افتراضية مؤقتاً.
+
+لإضافة الأيقونات لاحقاً، راجع ملف:
+SAVE_IMAGES_GUIDE.md
